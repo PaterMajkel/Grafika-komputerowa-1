@@ -288,7 +288,7 @@ namespace grafa1
         }
         private void WriteSmth(object sender, KeyEventArgs e)
         {
-            if (mode == "text")
+            if (mode == "text" && textBlock is not null)
             {
                 this.textBlock.Text += e.Key.ToString().ToLower();
             }
