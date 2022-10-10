@@ -102,6 +102,7 @@ namespace grafa1
             }
             if (this.mode == "pencil")
                 return;
+            textBlock = null;
             Canva.Children.Add(shape);
             shapes.Add(shape);
             this.dragObject = shapes[shapes.Count - 1];
